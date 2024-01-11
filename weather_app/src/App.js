@@ -1,11 +1,11 @@
 
-import './App.css';
 import LoginSignup from './Components/LoginSignup/LoginSignup';
-
+import WeatherApp from './Components/WeatherApp/WeatherApp';
 function App() {
   return (
     <div>
-      <LoginSignup/>
+      {/* <LoginSignup/> */}
+      <WeatherApp/>
     </div>
   );
 }

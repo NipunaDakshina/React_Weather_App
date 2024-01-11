@@ -10,9 +10,16 @@ import password_icon from '../Assets/password.png'
 const LoginSignup = () => {
     const [action,setAction]=useState("Sign Up");
 
+    async function check_user(){
+
+
+
+    }
+
 
 
   return (
+    //heading section
     <div className='container'>
      <div className='head-container'>
         <div className={action==="Login"?"choose gray":"choose"} onClick={()=>{setAction("Sign Up")}}>
@@ -55,7 +62,7 @@ const LoginSignup = () => {
     }
 
     <div className='submit-container'>
-        <div className='submit'>
+        <div className='submit' onClick={check_user()}>
             {action}
         </div>
     </div>
